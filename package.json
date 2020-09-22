@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
 	"lint": "./node_modules/.bin/eslint -c \"./.eslintrc.js\" **\\*.ts",
+	"fix-lint": "./node_modules/.bin/eslint -c \"./.eslintrc.js\" --fix **\\*.ts",
 	"build": "tsc"
   },
   "author": "",
