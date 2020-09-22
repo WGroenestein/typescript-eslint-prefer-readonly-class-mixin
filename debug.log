@@ -1,0 +1,811 @@
+$ npm run lint
+
+> prefer-readonly@1.0.0 lint C:\Users\Redacted\source\repos\prefer-readonly
+> eslint -c "./.eslintrc.js" **\*.ts --debug
+
+2020-09-22T09:17:53.969Z eslint:cli CLI args: [ '-c', './.eslintrc.js', '**\\*.ts', '--debug' ]
+2020-09-22T09:17:53.970Z eslint:cli Running on files
+2020-09-22T09:17:53.978Z eslint:config-array-factory Loading JSON config file: C:\Users\Redacted\source\repos\prefer-readonly\package.json
+2020-09-22T09:17:53.979Z eslint:config-array-factory Loading JS config file: C:\Users\Redacted\source\repos\prefer-readonly\.eslintrc.js
+2020-09-22T09:17:53.980Z eslint:config-array-factory Loading parser "@typescript-eslint/parser" from C:\Users\Redacted\source\repos\prefer-readonly\.eslintrc.js
+2020-09-22T09:17:53.981Z eslint:config-array-factory Loaded: @typescript-eslint/parser@4.2.0 (C:\Users\Redacted\source\repos\prefer-readonly\node_modules\@typescript-eslint\parser\dist\index.js)
+2020-09-22T09:17:54.213Z eslint:config-array-factory Loading plugin "@typescript-eslint" from C:\Users\Redacted\source\repos\prefer-readonly\.eslintrc.js
+2020-09-22T09:17:54.214Z eslint:config-array-factory Loaded: @typescript-eslint/eslint-plugin@4.2.0 (C:\Users\Redacted\source\repos\prefer-readonly\node_modules\@typescript-eslint\eslint-plugin\dist\index.js)
+2020-09-22T09:17:54.344Z eslint:config-array-factory Plugin C:\Users\Redacted\source\repos\prefer-readonly\node_modules\@typescript-eslint\eslint-plugin\dist\index.js loaded in: 130ms
+2020-09-22T09:17:54.345Z eslint:ignore-pattern Create with: [ IgnorePattern { patterns: [ '/**/node_modules/*' ], basePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly', loose: false } ]
+2020-09-22T09:17:54.346Z eslint:ignore-pattern   processed: { basePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly', patterns: [ '/**/node_modules/*' ] }
+2020-09-22T09:17:54.346Z eslint:ignore-pattern Create with: [ IgnorePattern { patterns: [ '/**/node_modules/*' ], basePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly', loose: false } ]
+2020-09-22T09:17:54.346Z eslint:ignore-pattern   processed: { basePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly', patterns: [ '/**/node_modules/*' ] }
+2020-09-22T09:17:54.347Z eslint:file-enumerator Start to iterate files: [ '**\\*.ts' ]
+2020-09-22T09:17:54.347Z eslint:file-enumerator Glob: C:\Users\Redacted\source\repos\prefer-readonly\**\*.ts
+2020-09-22T09:17:54.348Z eslint:file-enumerator recursive? true
+2020-09-22T09:17:54.348Z eslint:file-enumerator Enter the directory: C:\Users\Redacted\source\repos\prefer-readonly
+2020-09-22T09:17:54.349Z eslint:cascading-config-array-factory Load config files for C:\Users\Redacted\source\repos\prefer-readonly.
+2020-09-22T09:17:54.349Z eslint:cascading-config-array-factory No cache found: C:\Users\Redacted\source\repos\prefer-readonly.
+2020-09-22T09:17:54.349Z eslint:config-array-factory Loading JS config file: C:\Users\Redacted\source\repos\prefer-readonly\.eslintrc.js
+2020-09-22T09:17:54.350Z eslint:config-array-factory Config file found: C:\Users\Redacted\source\repos\prefer-readonly\.eslintrc.js
+2020-09-22T09:17:54.350Z eslint:config-array-factory Loading parser "@typescript-eslint/parser" from C:\Users\Redacted\source\repos\prefer-readonly\.eslintrc.js
+2020-09-22T09:17:54.350Z eslint:config-array-factory Loaded: @typescript-eslint/parser@4.2.0 (C:\Users\Redacted\source\repos\prefer-readonly\node_modules\@typescript-eslint\parser\dist\index.js)
+2020-09-22T09:17:54.350Z eslint:config-array-factory Loading plugin "@typescript-eslint" from C:\Users\Redacted\source\repos\prefer-readonly\.eslintrc.js
+2020-09-22T09:17:54.350Z eslint:config-array-factory Loaded: @typescript-eslint/eslint-plugin@4.2.0 (C:\Users\Redacted\source\repos\prefer-readonly\node_modules\@typescript-eslint\eslint-plugin\dist\index.js)
+2020-09-22T09:17:54.350Z eslint:config-array-factory Plugin C:\Users\Redacted\source\repos\prefer-readonly\node_modules\@typescript-eslint\eslint-plugin\dist\index.js loaded in: 0ms
+2020-09-22T09:17:54.350Z eslint:cascading-config-array-factory Stop traversing because of 'root:true'.
+2020-09-22T09:17:54.352Z eslint:cascading-config-array-factory Configuration was determined: ConfigArray(3) [ { type: 'config', name: 'DefaultIgnorePattern', filePath: '', criteria: null, env: undefined, globals: undefined, ignorePattern: IgnorePattern { patterns: [Array], basePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly', loose: false }, noInlineConfig: undefined, parser: undefined, parserOptions: undefined, plugins: undefined, processor: undefined, reportUnusedDisableDirectives: undefined, root: undefined, rules: undefined, settings: undefined }, { type: 'config', name: '.eslintrc.js', filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\.eslintrc.js', criteria: null, env: { browser: true }, globals: undefined, ignorePattern: IgnorePattern { patterns: [Array], basePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly', loose: false }, noInlineConfig: undefined, parser: { error: null, filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\@typescript-eslint\\parser\\dist\\index.js', id: '@typescript-eslint/parser', importerName: '.eslintrc.js', importerPath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\.eslintrc.js' }, parserOptions: { project: 'tsconfig.json', sourceType: 'module' }, plugins: { '@typescript-eslint': [Object] }, processor: undefined, reportUnusedDisableDirectives: undefined, root: true, rules: { '@typescript-eslint/prefer-readonly': 'error' }, settings: undefined }, { type: 'config', name: '--config', filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\.eslintrc.js', criteria: null, env: { browser: true }, globals: undefined, ignorePattern: IgnorePattern { patterns: [Array], basePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly', loose: false }, noInlineConfig: undefined, parser: { error: null, filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\@typescript-eslint\\parser\\dist\\index.js', id: '@typescript-eslint/parser', importerName: '--config', importerPath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\.eslintrc.js' }, parserOptions: { project: 'tsconfig.json', sourceType: 'module' }, plugins: { '@typescript-eslint': [Object] }, processor: undefined, reportUnusedDisableDirectives: undefined, root: true, rules: { '@typescript-eslint/prefer-readonly': 'error' }, settings: undefined } ] on C:\Users\Redacted\source\repos\prefer-readonly
+2020-09-22T09:17:54.352Z eslint:file-enumerator Didn't match: .eslintrc.js
+2020-09-22T09:17:54.353Z eslint:ignore-pattern Create with: [ IgnorePattern { patterns: [ '/**/node_modules/*' ], basePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly', loose: false }, IgnorePattern { patterns: [ '**/*.js' ], basePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly', loose: false }, IgnorePattern { patterns: [ '**/*.js' ], basePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly', loose: false } ]
+2020-09-22T09:17:54.353Z eslint:ignore-pattern   processed: { basePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly', patterns: [ '/**/node_modules/*', '**/*.js', '**/*.js' ] }
+2020-09-22T09:17:54.353Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\.git\\',
+  dot: false,
+  relativePath: '.git/',
+  result: true
+}
+2020-09-22T09:17:54.353Z eslint:file-enumerator Didn't match: .gitignore
+2020-09-22T09:17:54.354Z eslint:file-enumerator Didn't match: debug.log
+2020-09-22T09:17:54.354Z eslint:file-enumerator Didn't match: file.js
+2020-09-22T09:17:54.354Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\file.ts',
+  dot: false,
+  relativePath: 'file.ts',
+  result: false
+}
+2020-09-22T09:17:54.354Z eslint:file-enumerator Yield: file.ts
+2020-09-22T09:17:54.354Z eslint:cascading-config-array-factory Load config files for C:\Users\Redacted\source\repos\prefer-readonly.
+2020-09-22T09:17:54.354Z eslint:cascading-config-array-factory Cache hit: C:\Users\Redacted\source\repos\prefer-readonly.
+2020-09-22T09:17:54.354Z eslint:cli-engine Lint C:\Users\Redacted\source\repos\prefer-readonly\file.ts
+2020-09-22T09:17:54.354Z eslint:linter Linting code for C:\Users\Redacted\source\repos\prefer-readonly\file.ts (pass 1)
+2020-09-22T09:17:54.354Z eslint:linter Verify
+2020-09-22T09:17:54.354Z eslint:linter With ConfigArray: C:\Users\Redacted\source\repos\prefer-readonly\file.ts
+2020-09-22T09:17:54.897Z eslint:linter Generating fixed text for C:\Users\Redacted\source\repos\prefer-readonly\file.ts (pass 1)
+2020-09-22T09:17:54.897Z eslint:source-code-fixer Applying fixes
+2020-09-22T09:17:54.897Z eslint:source-code-fixer shouldFix parameter was false, not attempting fixes
+2020-09-22T09:17:54.897Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\',
+  dot: false,
+  relativePath: 'node_modules/',
+  result: false
+}
+2020-09-22T09:17:54.897Z eslint:file-enumerator Enter the directory: C:\Users\Redacted\source\repos\prefer-readonly\node_modules
+2020-09-22T09:17:54.897Z eslint:cascading-config-array-factory Load config files for C:\Users\Redacted\source\repos\prefer-readonly\node_modules.
+2020-09-22T09:17:54.897Z eslint:cascading-config-array-factory No cache found: C:\Users\Redacted\source\repos\prefer-readonly\node_modules.
+2020-09-22T09:17:54.898Z eslint:config-array-factory Config file not found on C:\Users\Redacted\source\repos\prefer-readonly\node_modules
+2020-09-22T09:17:54.898Z eslint:cascading-config-array-factory Cache hit: C:\Users\Redacted\source\repos\prefer-readonly.
+2020-09-22T09:17:54.898Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\.bin\\',
+  dot: false,
+  relativePath: 'node_modules/.bin/',
+  result: true
+}
+2020-09-22T09:17:54.898Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\@babel\\',
+  dot: false,
+  relativePath: 'node_modules/@babel/',
+  result: true
+}
+2020-09-22T09:17:54.898Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\@eslint\\',
+  dot: false,
+  relativePath: 'node_modules/@eslint/',
+  result: true
+}
+2020-09-22T09:17:54.898Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\@nodelib\\',
+  dot: false,
+  relativePath: 'node_modules/@nodelib/',
+  result: true
+}
+2020-09-22T09:17:54.898Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\@types\\',
+  dot: false,
+  relativePath: 'node_modules/@types/',
+  result: true
+}
+2020-09-22T09:17:54.898Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\@typescript-eslint\\',
+  dot: false,
+  relativePath: 'node_modules/@typescript-eslint/',
+  result: true
+}
+2020-09-22T09:17:54.898Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\acorn\\',
+  dot: false,
+  relativePath: 'node_modules/acorn/',
+  result: true
+}
+2020-09-22T09:17:54.898Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\acorn-jsx\\',
+  dot: false,
+  relativePath: 'node_modules/acorn-jsx/',
+  result: true
+}
+2020-09-22T09:17:54.898Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\ajv\\',
+  dot: false,
+  relativePath: 'node_modules/ajv/',
+  result: true
+}
+2020-09-22T09:17:54.898Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\ansi-colors\\',
+  dot: false,
+  relativePath: 'node_modules/ansi-colors/',
+  result: true
+}
+2020-09-22T09:17:54.899Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\ansi-regex\\',
+  dot: false,
+  relativePath: 'node_modules/ansi-regex/',
+  result: true
+}
+2020-09-22T09:17:54.899Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\ansi-styles\\',
+  dot: false,
+  relativePath: 'node_modules/ansi-styles/',
+  result: true
+}
+2020-09-22T09:17:54.899Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\argparse\\',
+  dot: false,
+  relativePath: 'node_modules/argparse/',
+  result: true
+}
+2020-09-22T09:17:54.899Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\array-union\\',
+  dot: false,
+  relativePath: 'node_modules/array-union/',
+  result: true
+}
+2020-09-22T09:17:54.899Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\astral-regex\\',
+  dot: false,
+  relativePath: 'node_modules/astral-regex/',
+  result: true
+}
+2020-09-22T09:17:54.899Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\balanced-match\\',
+  dot: false,
+  relativePath: 'node_modules/balanced-match/',
+  result: true
+}
+2020-09-22T09:17:54.899Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\brace-expansion\\',
+  dot: false,
+  relativePath: 'node_modules/brace-expansion/',
+  result: true
+}
+2020-09-22T09:17:54.899Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\braces\\',
+  dot: false,
+  relativePath: 'node_modules/braces/',
+  result: true
+}
+2020-09-22T09:17:54.899Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\callsites\\',
+  dot: false,
+  relativePath: 'node_modules/callsites/',
+  result: true
+}
+2020-09-22T09:17:54.899Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\chalk\\',
+  dot: false,
+  relativePath: 'node_modules/chalk/',
+  result: true
+}
+2020-09-22T09:17:54.899Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\color-convert\\',
+  dot: false,
+  relativePath: 'node_modules/color-convert/',
+  result: true
+}
+2020-09-22T09:17:54.899Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\color-name\\',
+  dot: false,
+  relativePath: 'node_modules/color-name/',
+  result: true
+}
+2020-09-22T09:17:54.899Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\concat-map\\',
+  dot: false,
+  relativePath: 'node_modules/concat-map/',
+  result: true
+}
+2020-09-22T09:17:54.899Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\cross-spawn\\',
+  dot: false,
+  relativePath: 'node_modules/cross-spawn/',
+  result: true
+}
+2020-09-22T09:17:54.899Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\debug\\',
+  dot: false,
+  relativePath: 'node_modules/debug/',
+  result: true
+}
+2020-09-22T09:17:54.900Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\deep-is\\',
+  dot: false,
+  relativePath: 'node_modules/deep-is/',
+  result: true
+}
+2020-09-22T09:17:54.900Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\dir-glob\\',
+  dot: false,
+  relativePath: 'node_modules/dir-glob/',
+  result: true
+}
+2020-09-22T09:17:54.900Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\doctrine\\',
+  dot: false,
+  relativePath: 'node_modules/doctrine/',
+  result: true
+}
+2020-09-22T09:17:54.900Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\emoji-regex\\',
+  dot: false,
+  relativePath: 'node_modules/emoji-regex/',
+  result: true
+}
+2020-09-22T09:17:54.900Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\enquirer\\',
+  dot: false,
+  relativePath: 'node_modules/enquirer/',
+  result: true
+}
+2020-09-22T09:17:54.900Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\escape-string-regexp\\',
+  dot: false,
+  relativePath: 'node_modules/escape-string-regexp/',
+  result: true
+}
+2020-09-22T09:17:54.900Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\eslint\\',
+  dot: false,
+  relativePath: 'node_modules/eslint/',
+  result: true
+}
+2020-09-22T09:17:54.900Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\eslint-scope\\',
+  dot: false,
+  relativePath: 'node_modules/eslint-scope/',
+  result: true
+}
+2020-09-22T09:17:54.900Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\eslint-utils\\',
+  dot: false,
+  relativePath: 'node_modules/eslint-utils/',
+  result: true
+}
+2020-09-22T09:17:54.900Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\eslint-visitor-keys\\',
+  dot: false,
+  relativePath: 'node_modules/eslint-visitor-keys/',
+  result: true
+}
+2020-09-22T09:17:54.900Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\espree\\',
+  dot: false,
+  relativePath: 'node_modules/espree/',
+  result: true
+}
+2020-09-22T09:17:54.900Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\esprima\\',
+  dot: false,
+  relativePath: 'node_modules/esprima/',
+  result: true
+}
+2020-09-22T09:17:54.900Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\esquery\\',
+  dot: false,
+  relativePath: 'node_modules/esquery/',
+  result: true
+}
+2020-09-22T09:17:54.900Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\esrecurse\\',
+  dot: false,
+  relativePath: 'node_modules/esrecurse/',
+  result: true
+}
+2020-09-22T09:17:54.900Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\estraverse\\',
+  dot: false,
+  relativePath: 'node_modules/estraverse/',
+  result: true
+}
+2020-09-22T09:17:54.900Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\esutils\\',
+  dot: false,
+  relativePath: 'node_modules/esutils/',
+  result: true
+}
+2020-09-22T09:17:54.900Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\fast-deep-equal\\',
+  dot: false,
+  relativePath: 'node_modules/fast-deep-equal/',
+  result: true
+}
+2020-09-22T09:17:54.901Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\fast-glob\\',
+  dot: false,
+  relativePath: 'node_modules/fast-glob/',
+  result: true
+}
+2020-09-22T09:17:54.901Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\fast-json-stable-stringify\\',
+  dot: false,
+  relativePath: 'node_modules/fast-json-stable-stringify/',
+  result: true
+}
+2020-09-22T09:17:54.901Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\fast-levenshtein\\',
+  dot: false,
+  relativePath: 'node_modules/fast-levenshtein/',
+  result: true
+}
+2020-09-22T09:17:54.901Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\fastq\\',
+  dot: false,
+  relativePath: 'node_modules/fastq/',
+  result: true
+}
+2020-09-22T09:17:54.901Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\file-entry-cache\\',
+  dot: false,
+  relativePath: 'node_modules/file-entry-cache/',
+  result: true
+}
+2020-09-22T09:17:54.901Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\fill-range\\',
+  dot: false,
+  relativePath: 'node_modules/fill-range/',
+  result: true
+}
+2020-09-22T09:17:54.901Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\flat-cache\\',
+  dot: false,
+  relativePath: 'node_modules/flat-cache/',
+  result: true
+}
+2020-09-22T09:17:54.901Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\flatted\\',
+  dot: false,
+  relativePath: 'node_modules/flatted/',
+  result: true
+}
+2020-09-22T09:17:54.901Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\fs.realpath\\',
+  dot: false,
+  relativePath: 'node_modules/fs.realpath/',
+  result: true
+}
+2020-09-22T09:17:54.901Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\functional-red-black-tree\\',
+  dot: false,
+  relativePath: 'node_modules/functional-red-black-tree/',
+  result: true
+}
+2020-09-22T09:17:54.901Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\glob\\',
+  dot: false,
+  relativePath: 'node_modules/glob/',
+  result: true
+}
+2020-09-22T09:17:54.901Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\glob-parent\\',
+  dot: false,
+  relativePath: 'node_modules/glob-parent/',
+  result: true
+}
+2020-09-22T09:17:54.901Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\globals\\',
+  dot: false,
+  relativePath: 'node_modules/globals/',
+  result: true
+}
+2020-09-22T09:17:54.901Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\globby\\',
+  dot: false,
+  relativePath: 'node_modules/globby/',
+  result: true
+}
+2020-09-22T09:17:54.901Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\has-flag\\',
+  dot: false,
+  relativePath: 'node_modules/has-flag/',
+  result: true
+}
+2020-09-22T09:17:54.901Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\ignore\\',
+  dot: false,
+  relativePath: 'node_modules/ignore/',
+  result: true
+}
+2020-09-22T09:17:54.902Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\import-fresh\\',
+  dot: false,
+  relativePath: 'node_modules/import-fresh/',
+  result: true
+}
+2020-09-22T09:17:54.902Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\imurmurhash\\',
+  dot: false,
+  relativePath: 'node_modules/imurmurhash/',
+  result: true
+}
+2020-09-22T09:17:54.902Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\inflight\\',
+  dot: false,
+  relativePath: 'node_modules/inflight/',
+  result: true
+}
+2020-09-22T09:17:54.902Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\inherits\\',
+  dot: false,
+  relativePath: 'node_modules/inherits/',
+  result: true
+}
+2020-09-22T09:17:54.902Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\is-extglob\\',
+  dot: false,
+  relativePath: 'node_modules/is-extglob/',
+  result: true
+}
+2020-09-22T09:17:54.902Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\is-fullwidth-code-point\\',
+  dot: false,
+  relativePath: 'node_modules/is-fullwidth-code-point/',
+  result: true
+}
+2020-09-22T09:17:54.902Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\is-glob\\',
+  dot: false,
+  relativePath: 'node_modules/is-glob/',
+  result: true
+}
+2020-09-22T09:17:54.902Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\is-number\\',
+  dot: false,
+  relativePath: 'node_modules/is-number/',
+  result: true
+}
+2020-09-22T09:17:54.902Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\isexe\\',
+  dot: false,
+  relativePath: 'node_modules/isexe/',
+  result: true
+}
+2020-09-22T09:17:54.902Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\js-tokens\\',
+  dot: false,
+  relativePath: 'node_modules/js-tokens/',
+  result: true
+}
+2020-09-22T09:17:54.902Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\js-yaml\\',
+  dot: false,
+  relativePath: 'node_modules/js-yaml/',
+  result: true
+}
+2020-09-22T09:17:54.902Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\json-schema-traverse\\',
+  dot: false,
+  relativePath: 'node_modules/json-schema-traverse/',
+  result: true
+}
+2020-09-22T09:17:54.902Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\json-stable-stringify-without-jsonify\\',
+  dot: false,
+  relativePath: 'node_modules/json-stable-stringify-without-jsonify/',
+  result: true
+}
+2020-09-22T09:17:54.902Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\levn\\',
+  dot: false,
+  relativePath: 'node_modules/levn/',
+  result: true
+}
+2020-09-22T09:17:54.902Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\lodash\\',
+  dot: false,
+  relativePath: 'node_modules/lodash/',
+  result: true
+}
+2020-09-22T09:17:54.902Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\merge2\\',
+  dot: false,
+  relativePath: 'node_modules/merge2/',
+  result: true
+}
+2020-09-22T09:17:54.903Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\micromatch\\',
+  dot: false,
+  relativePath: 'node_modules/micromatch/',
+  result: true
+}
+2020-09-22T09:17:54.903Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\minimatch\\',
+  dot: false,
+  relativePath: 'node_modules/minimatch/',
+  result: true
+}
+2020-09-22T09:17:54.903Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\minimist\\',
+  dot: false,
+  relativePath: 'node_modules/minimist/',
+  result: true
+}
+2020-09-22T09:17:54.903Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\mkdirp\\',
+  dot: false,
+  relativePath: 'node_modules/mkdirp/',
+  result: true
+}
+2020-09-22T09:17:54.903Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\ms\\',
+  dot: false,
+  relativePath: 'node_modules/ms/',
+  result: true
+}
+2020-09-22T09:17:54.903Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\natural-compare\\',
+  dot: false,
+  relativePath: 'node_modules/natural-compare/',
+  result: true
+}
+2020-09-22T09:17:54.903Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\once\\',
+  dot: false,
+  relativePath: 'node_modules/once/',
+  result: true
+}
+2020-09-22T09:17:54.903Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\optionator\\',
+  dot: false,
+  relativePath: 'node_modules/optionator/',
+  result: true
+}
+2020-09-22T09:17:54.903Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\parent-module\\',
+  dot: false,
+  relativePath: 'node_modules/parent-module/',
+  result: true
+}
+2020-09-22T09:17:54.903Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\path-is-absolute\\',
+  dot: false,
+  relativePath: 'node_modules/path-is-absolute/',
+  result: true
+}
+2020-09-22T09:17:54.903Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\path-key\\',
+  dot: false,
+  relativePath: 'node_modules/path-key/',
+  result: true
+}
+2020-09-22T09:17:54.903Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\path-type\\',
+  dot: false,
+  relativePath: 'node_modules/path-type/',
+  result: true
+}
+2020-09-22T09:17:54.903Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\picomatch\\',
+  dot: false,
+  relativePath: 'node_modules/picomatch/',
+  result: true
+}
+2020-09-22T09:17:54.903Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\prelude-ls\\',
+  dot: false,
+  relativePath: 'node_modules/prelude-ls/',
+  result: true
+}
+2020-09-22T09:17:54.903Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\progress\\',
+  dot: false,
+  relativePath: 'node_modules/progress/',
+  result: true
+}
+2020-09-22T09:17:54.903Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\punycode\\',
+  dot: false,
+  relativePath: 'node_modules/punycode/',
+  result: true
+}
+2020-09-22T09:17:54.904Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\regexpp\\',
+  dot: false,
+  relativePath: 'node_modules/regexpp/',
+  result: true
+}
+2020-09-22T09:17:54.904Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\resolve-from\\',
+  dot: false,
+  relativePath: 'node_modules/resolve-from/',
+  result: true
+}
+2020-09-22T09:17:54.904Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\reusify\\',
+  dot: false,
+  relativePath: 'node_modules/reusify/',
+  result: true
+}
+2020-09-22T09:17:54.904Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\rimraf\\',
+  dot: false,
+  relativePath: 'node_modules/rimraf/',
+  result: true
+}
+2020-09-22T09:17:54.904Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\run-parallel\\',
+  dot: false,
+  relativePath: 'node_modules/run-parallel/',
+  result: true
+}
+2020-09-22T09:17:54.904Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\semver\\',
+  dot: false,
+  relativePath: 'node_modules/semver/',
+  result: true
+}
+2020-09-22T09:17:54.904Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\shebang-command\\',
+  dot: false,
+  relativePath: 'node_modules/shebang-command/',
+  result: true
+}
+2020-09-22T09:17:54.905Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\shebang-regex\\',
+  dot: false,
+  relativePath: 'node_modules/shebang-regex/',
+  result: true
+}
+2020-09-22T09:17:54.905Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\slash\\',
+  dot: false,
+  relativePath: 'node_modules/slash/',
+  result: true
+}
+2020-09-22T09:17:54.910Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\slice-ansi\\',
+  dot: false,
+  relativePath: 'node_modules/slice-ansi/',
+  result: true
+}
+2020-09-22T09:17:54.910Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\sprintf-js\\',
+  dot: false,
+  relativePath: 'node_modules/sprintf-js/',
+  result: true
+}
+2020-09-22T09:17:54.910Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\string-width\\',
+  dot: false,
+  relativePath: 'node_modules/string-width/',
+  result: true
+}
+2020-09-22T09:17:54.910Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\strip-ansi\\',
+  dot: false,
+  relativePath: 'node_modules/strip-ansi/',
+  result: true
+}
+2020-09-22T09:17:54.910Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\strip-json-comments\\',
+  dot: false,
+  relativePath: 'node_modules/strip-json-comments/',
+  result: true
+}
+2020-09-22T09:17:54.910Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\supports-color\\',
+  dot: false,
+  relativePath: 'node_modules/supports-color/',
+  result: true
+}
+2020-09-22T09:17:54.910Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\table\\',
+  dot: false,
+  relativePath: 'node_modules/table/',
+  result: true
+}
+2020-09-22T09:17:54.910Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\text-table\\',
+  dot: false,
+  relativePath: 'node_modules/text-table/',
+  result: true
+}
+2020-09-22T09:17:54.910Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\to-regex-range\\',
+  dot: false,
+  relativePath: 'node_modules/to-regex-range/',
+  result: true
+}
+2020-09-22T09:17:54.910Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\tslib\\',
+  dot: false,
+  relativePath: 'node_modules/tslib/',
+  result: true
+}
+2020-09-22T09:17:54.911Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\tsutils\\',
+  dot: false,
+  relativePath: 'node_modules/tsutils/',
+  result: true
+}
+2020-09-22T09:17:54.911Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\type-check\\',
+  dot: false,
+  relativePath: 'node_modules/type-check/',
+  result: true
+}
+2020-09-22T09:17:54.911Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\type-fest\\',
+  dot: false,
+  relativePath: 'node_modules/type-fest/',
+  result: true
+}
+2020-09-22T09:17:54.911Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\typescript\\',
+  dot: false,
+  relativePath: 'node_modules/typescript/',
+  result: true
+}
+2020-09-22T09:17:54.911Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\uri-js\\',
+  dot: false,
+  relativePath: 'node_modules/uri-js/',
+  result: true
+}
+2020-09-22T09:17:54.911Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\v8-compile-cache\\',
+  dot: false,
+  relativePath: 'node_modules/v8-compile-cache/',
+  result: true
+}
+2020-09-22T09:17:54.911Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\which\\',
+  dot: false,
+  relativePath: 'node_modules/which/',
+  result: true
+}
+2020-09-22T09:17:54.911Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\word-wrap\\',
+  dot: false,
+  relativePath: 'node_modules/word-wrap/',
+  result: true
+}
+2020-09-22T09:17:54.911Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\wrappy\\',
+  dot: false,
+  relativePath: 'node_modules/wrappy/',
+  result: true
+}
+2020-09-22T09:17:54.911Z eslint:ignore-pattern Check {
+  filePath: 'C:\\Users\\Redacted\\source\\repos\\prefer-readonly\\node_modules\\write\\',
+  dot: false,
+  relativePath: 'node_modules/write/',
+  result: true
+}
+2020-09-22T09:17:54.912Z eslint:file-enumerator Leave the directory: C:\Users\Redacted\source\repos\prefer-readonly\node_modules
+2020-09-22T09:17:54.912Z eslint:file-enumerator Didn't match: package-lock.json
+2020-09-22T09:17:54.912Z eslint:file-enumerator Didn't match: package.json
+2020-09-22T09:17:54.912Z eslint:file-enumerator Didn't match: README.md
+2020-09-22T09:17:54.912Z eslint:file-enumerator Didn't match: tsconfig.json
+2020-09-22T09:17:54.912Z eslint:file-enumerator Leave the directory: C:\Users\Redacted\source\repos\prefer-readonly
+2020-09-22T09:17:54.912Z eslint:file-enumerator Complete iterating files: ["**\\*.ts"]
+2020-09-22T09:17:54.912Z eslint:cli-engine Linting complete in: 565ms
+
+C:\Users\Redacted\source\repos\prefer-readonly\file.ts
+  7:3  error  Member '_name' is never reassigned; mark it as `readonly`  @typescript-eslint/prefer-readonly
+
+✖ 1 problem (1 error, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! prefer-readonly@1.0.0 lint: `eslint -c "./.eslintrc.js" **\*.ts --debug`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the prefer-readonly@1.0.0 lint script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Redacted\AppData\Roaming\npm-cache\_logs\2020-09-22T09_17_54_949Z-debug.log
